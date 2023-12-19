@@ -13,7 +13,7 @@ public class BankControlller {
             DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
 
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/BankDB",
+                    "jdbc:mysql://localhost:3306/bankdb",
                     "root",
                     "");
         } catch (Exception e){
