@@ -69,6 +69,13 @@ public class BankView extends JFrame {
                 deleteAccount();
             }
         });
+
+        readButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                readAllAccounts();
+            }
+        });
 }
     private void createAccount() {
         String accountNumber = accountNumberField.getText();
